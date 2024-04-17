@@ -1,0 +1,33 @@
+@font-face{
+    src: url(/assets/fonts/Aire\ Exterior.woff2);
+    font-family: "Aire Exterior";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#141C24;
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    box-sizing:content-box ;
+    padding-inline: 100px ;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* font-family: "Roboto", sans-serif; 
+    font-family: "Aire Exterior";   */
