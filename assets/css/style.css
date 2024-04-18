@@ -198,6 +198,10 @@ ul{
     .follow-btn{
         max-width: 100%;
     }
+    .shadov{
+        max-width: 100%;
+        height: 0px;
+    }
 }
 /* font-family: "Roboto", sans-serif; 
     font-family: "Aire Exterior";   */
