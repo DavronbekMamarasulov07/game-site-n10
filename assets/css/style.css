@@ -31,3 +31,144 @@ ul{
 
 /* font-family: "Roboto", sans-serif; 
     font-family: "Aire Exterior";   */
+
+
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 110px;
+    padding-block:48px;
+}
+
+.nav-wrapper a{
+    display: flex;
+    gap:0 17px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+.item-link{
+    font-family: "Roboto", sans-serif; 
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: left;
+    color: #ffffffd6;
+    transition: .4s;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    white-space: nowrap;
+    
+}
+
+.item-link:hover{
+    border-bottom: 1px solid #00C5FF;
+}
+
+.bi-list{
+    display: none;
+    font-size: 30px;
+    color: #ffffffd6;
+    padding-top: 5px;
+    padding-right: 50px;
+
+}
+
+
+
+
+
+@media only screen and (max-width:1405px ){
+   
+    .container{
+        padding-inline: 50px;
+    }
+    .bi-list{
+        padding-right: 20px;
+    }
+
+    .nav-list{
+        gap: 30px;
+    }
+    
+    .nav-wrapper{
+        gap: 60px;
+    }
+   
+}
+
+@media only screen and (max-width:1139px ){
+    
+
+    .nav-logo-text{
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width:980px ){
+    .container{
+        padding-inline: 20px;
+    }
+    .bi-list{
+        padding-right: 20px;
+    }
+
+    .nav-wrapper{
+        gap: 30px;
+    }
+
+    .bi-list{
+        padding-right: 10px;
+
+    }
+
+    .nav-list{
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width:819px ){
+    
+        .nav-list{
+        display: none;
+    }
+
+    .bi-list{
+        display: block;
+    } 
+   
+}
+
+@media only screen and (max-width:720px ){
+    .container{
+        padding-inline: 30px;
+    }
+    .bi-list{
+        padding-right: 20px;
+
+    }
+
+   
+}
+
+
+
+@media only screen and (max-width:360px ){
+    .container{
+        padding-inline: 10px;
+    }
+    .bi-list{
+        padding-right: 20px;
+
+    }
+}
+
