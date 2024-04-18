@@ -82,6 +82,146 @@ ul{
 }
 
 
+.start {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+.line {
+    height: 1.5px;
+    width: 73px;
+    /* width: 100%; */
+    background-color: #50AFCD;
+
+}
+
+.start__title {
+    color: #50AFCD;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: center;
+
+}
+
+.game__line {
+    height: 1.5px;
+    width: 90px;
+    margin-top: 25px;
+    background-color: #50AFCD;
+}
+
+.game__title {
+    color: white;
+    font-family: "Aire Exterior";
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.game__cards {
+    display: flex;
+    justify-content:center;
+     
+    gap: 40px;
+    margin-top: 90px;
+}
+
+.game__content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+
+}
+.cards__one,
+.cards__two{
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 53px;
+
+
+}
+
+.game__text {
+    color: white;
+    font-family: Roboto;
+    font-size: 21.33px;
+    font-weight: 300;
+    line-height: 31.99px;
+    text-align: center;
+
+}
+
+.begin {
+    display: flex;
+    margin-top: 90px;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.begin__title {
+    color: #50AFCD;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+   
+
+}
+.begin__line{
+    height: 1.5px;
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #50AFCD;
+}
+.games__line{
+    height: 1.5px;
+    width: 90px;
+    margin: 0 auto;
+       background-color: #50AFCD; 
+    margin-top: 24px;
+}
+
+
+@media(max-width:1020px){
+    .game__cards{
+        flex-direction: column;
+    }
+    .game__text{
+        max-width: 140px;
+    }
+    .games__line{
+        width: 163px;
+        transform: rotateY(45deg);
+    }
+
+    .game__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 
 
 
@@ -145,6 +285,8 @@ ul{
     .bi-list{
         display: block;
     } 
+
+    
    
 }
 
