@@ -296,6 +296,40 @@ ul{
     margin-top: 90px;
 }
 
+
+footer{
+    white-space: nowrap;
+    background-color: #171717;
+}
+.footer-images {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+.footer-image{
+    display: flex;
+    gap: 25px;
+}
+.footer-image2{
+    display: flex;
+    gap: 20px;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 69px;
+}
+.footer-text{
+    display: flex;
+    gap: 51px;
+    color: #fff;
+}
+.footer-logo{
+    display: flex;
+    gap: 10px;
+}
+
 .game__content {
     display: flex;
     align-items: center;
@@ -382,7 +416,13 @@ ul{
 }
 
 
-
+    .nav-logo-text{
+        display: none;
+    }
+    .footer-wrapper{
+        gap: 15px;
+    }
+  
 
 .info-tag-title {
    font-size: 16px;
@@ -569,6 +609,7 @@ ul{
    .follow-content-child {
       margin: 0px;
    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -606,12 +647,23 @@ ul{
    gap: 0 17px;
 }
 
+    .nav-list{
+        gap: 20px;
+    }
+    .footer-wrapper{
+        gap: 15px;    
+    }
+    .footer-logo:last-child{
+        padding-right: 15px;
+    }
+
 .nav-list {
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 50px;
    padding-right: 50px;
+
 }
 
 .item-link {
@@ -871,6 +923,15 @@ ul{
          align-items: center;
          text-align: center;
     }
+
+
+    .footer-images{
+        display: flex;
+        align-items: center;
+        
+    }
+
+
     .about-content-text, .about-content-title {
          max-width: 480px;
     }
@@ -923,6 +984,6 @@ ul{
          right: 0;
          bottom: 0;
     }
-    
+
 }
 
