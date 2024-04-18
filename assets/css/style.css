@@ -1,32 +1,216 @@
+
 @font-face {
    src: url(/assets/fonts/Aire\ Exterior.woff2);
    font-family: "Aire Exterior";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+body{
+    background-color:#141C24;
 }
 
-body {
-   background-color: #141c24;
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    box-sizing:content-box ;
+    padding-inline: 100px ;
 }
 
-.container {
-   max-width: 1220px;
-   margin: 0 auto;
-   box-sizing: content-box;
-   padding-inline: 100px;
+
+a{
+    text-decoration: none;
 }
 
-a {
-   text-decoration: none;
+ul{
+    list-style-type: none;
 }
 
-ul {
-   list-style-type: none;
+#follow{
+    padding-top: 50px;
 }
+
+.follow-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.follow-content{
+    margin-bottom: 30px;
+}
+.follow-content-child{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.follow-line{
+    width: 100%;
+    max-width: 50px;
+    border-bottom: 1px solid #57D6FF;
+}
+.follow-secondary-title{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    font-family: "Roboto", sans-serif;
+    color: #57D6FF;
+}
+.folllow-title{
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 39px;
+    color: #fff;
+    font-family: "Aire Exterior";
+}
+.follow-cards{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  
+
+}
+.follow-card{
+    width: 100%;
+    max-width: 400px;
+    background-color: #1F2631;
+    padding: 76px 42px 42px 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    box-shadow: -15px 18px 37px 0px #00000040;
+    /* transition: 0.5s; */
+}
+.follow-card-title{
+    max-width: 300px;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+.follow-card-subtitle{
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.follow-card-text{
+    font-family: "Roboto", sans-serif;
+    max-width: 311px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    color:#ABABAB;
+    min-height: 173px;
+}
+.follow-btn{
+    width: 100%;
+    padding: 14px 123px;
+    font-family: "Aire Exterior";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43.2px;
+    color:#141C24;
+    border: none;
+    border-radius: 5px;
+    background-color: #00C5FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow-bottom-line{
+    width: 100%;
+    max-width: 582px;
+    border-bottom: 1px solid #00C5FF;
+    margin-top: 90px;
+}
+.follow-card:hover{
+    background-color: #00C5FF;
+}
+.shadov{
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    border-radius: 50%;
+    box-shadow: #00C5FF26  0px 0px 150px 60px;
+    display:none;
+}
+.follow-card:hover .shadov{
+    display: block;
+}
+.follow-card:hover .follow-card-title{
+    color: #141C24;
+}
+.follow-card:hover .follow-card-subtitle{
+    color: #141C24;
+}
+.follow-card:hover .follow-card-text{
+    color: #000000;
+}
+.follow-card:hover .follow-btn{
+  background-color: #141C24;
+  color: #F1F8FF;
+}
+@media only screen and (max-width:342px){
+   .folllow-title{
+    font-size:28px;
+   }
+   .follow-content{
+    margin: 0px;
+   }
+   .follow-secondary-title{
+    font-size: 14px;
+   }
+   .follow-content-child{
+    margin: 0px;
+   }
+   
+}
+
+@media only screen and (max-width:800px) {
+    .container{
+        padding-inline: 15px;
+    }
+    .follow-cards{
+        padding-inline: 30px;
+    }
+    .follow-card{
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .follow-card-title{
+        max-width:100%;
+    }
+    .follow-btn{
+        max-width: 100%;
+        width: 100%;
+        padding: 8px 50px;
+    }
+    .shadov{
+        max-width: 100%;
+        height: 0px;
+    }
+
+}
+
+
 
 .info__wrapper {
    display: grid;
@@ -52,11 +236,153 @@ ul {
    margin-bottom: 17px;
 }
 
+
 .info-line {
    width: 100%;
    max-width: 50px;
    border-bottom: 1px solid #57d6ff;
 }
+
+.start {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+.line {
+    height: 1.5px;
+    width: 73px;
+    background-color: #50AFCD;
+
+}
+
+.start__title {
+    color: #50AFCD;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: center;
+
+}
+
+.game__line {
+    height: 1.5px;
+    width: 90px;
+    margin-top: 25px;
+    background-color: #50AFCD;
+}
+
+.game__title {
+    color: white;
+    font-family: "Aire Exterior";
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.game__cards {
+    display: flex;
+    justify-content:center;
+     
+    gap: 40px;
+    margin-top: 90px;
+}
+
+.game__content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+
+}
+.cards__one,
+.cards__two{
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 53px;
+
+
+}
+
+.game__text {
+    color: white;
+    font-family: Roboto;
+    font-size: 21.33px;
+    font-weight: 300;
+    line-height: 31.99px;
+    text-align: center;
+
+}
+
+.begin {
+    display: flex;
+    margin-top: 90px;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.begin__title {
+    color: #50AFCD;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+   
+
+}
+.begin__line{
+    height: 1.5px;
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #50AFCD;
+}
+.games__line{
+    height: 1.5px;
+    width: 90px;
+    margin: 0 auto;
+       background-color: #50AFCD; 
+    margin-top: 24px;
+}
+
+
+@media(max-width:1020px){
+    .game__cards{
+        flex-direction: column;
+    }
+    .game__text{
+        max-width: 140px;
+    }
+    .games__line{
+        width: 163px;
+        transform: rotateY(45deg);
+    }
+
+    .game__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
 
 .info-tag-title {
    font-size: 16px;
@@ -344,6 +670,7 @@ ul {
       padding-right: 20px;
    }
 
+
    .nav-wrapper {
       gap: 30px;
    }
@@ -355,6 +682,14 @@ ul {
    .nav-list {
       gap: 20px;
    }
+
+    .bi-list{
+        display: block;
+    } 
+
+    
+   
+
 }
 
 @media only screen and (max-width: 819px) {
@@ -410,6 +745,7 @@ ul {
    }
 }
 
+
 @media only screen and (max-width: 360px) {
    .info-img {
       display: none;
@@ -418,3 +754,175 @@ ul {
       text-align: center;
    }
 }
+=======
+#about {
+    margin: 130px 0;
+    overflow: hidden;
+}
+
+.about-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about-content {
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about-content-us {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    color: #57d5ff;
+    position: relative;
+    margin-left: 83px;
+}
+.about-content-us::after {
+    content: "";
+    position: absolute;
+    left: -80px;
+    bottom: 12px;
+    width: 50px;
+    border: 1px solid #57d5ff;
+}
+.about-content-title {
+    font-family: Aire Exterior;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 39px;
+    color: #fff;
+    margin: 25px 0 90px 0;
+}
+.about-content-text {
+    font-family: Roboto;
+    font-size: 21.33px;
+    font-weight: 300;
+    line-height: 31.99px;
+    color: #ABABAB;
+    margin-bottom: 60px;
+}
+.about-content-link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+    color: #00C5FF;
+    padding: 5px 0;
+    border-bottom: 1px solid #00C5FF;
+    transition: .5s ease-in-out;
+}
+.about-content-link:hover {
+    transform: translateY(-10px);
+    text-shadow: 0px 0px 10px  #00C5FF;
+}
+.about-image {
+    position: relative;
+    transition: .5s ease-in-out;
+    animation: scale 2s 5;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1) translateY(0);
+    }    
+    100% {
+        transform: scale(0.90) translateX(-60px);
+    }
+}
+
+.about-content-img {
+    position: absolute;
+    top: 40px;     
+    right: -230px;
+    bottom: 100px;
+    z-index: 999;
+}
+.about-content-img-three {
+    position: absolute;
+    left: 130px;
+    bottom: -220px;
+}
+@media only screen and (max-width:1030px) {
+    .about-image img {
+         width: 547px;
+    }
+}
+@media only screen and (max-width:999px) {
+    .about-wrapper {
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: center;
+         align-content: center;
+    }
+    .about-image {
+         width: 100%;
+         margin-top: 61px;
+         max-width: 600px;
+         min-height: 303px;
+         margin-left: -80px;
+    }
+    .about-content {
+         max-width: 100%;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+    }
+    .about-content-text, .about-content-title {
+         max-width: 480px;
+    }
+    
+}
+@media only screen and (max-width:360px) {
+    .about-wrapper {
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: center;
+         align-content: center;
+    }
+    .about-image {
+         width: 100%;
+         margin-top: 61px;
+         max-width: 465px;
+         max-height: 303px;
+         margin-left: -200px;
+    }
+    .about-content {
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+    }
+    .about-image img {
+         max-width: 247px;
+         min-height: 142px;
+         margin-left: 150px;
+    }
+    .about-content-img {
+         top: 0;
+         left: 100px;
+         right: 0;
+         bottom: 0;
+    }
+    .about-content-us {
+         font-size: 15px;
+    }
+    .about-content-title {
+         font-size: 30px;
+         text-align: left;
+         line-height: 32px;
+    }
+    .about-content-text {
+         text-align: left;
+         font-size: 18px;
+    }
+    .about-content-img-three {
+         top: 100px;
+         left: 50px;
+         right: 0;
+         bottom: 0;
+    }
+    
+}
+
