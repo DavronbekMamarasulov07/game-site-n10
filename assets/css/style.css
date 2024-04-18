@@ -1104,4 +1104,68 @@ text-align: left;
     
     }
 }
+    /*  map section ilhom*/
+    .box-map {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        text-align: center;
+    }
+    .line-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .line {
+        width: 40px;
+        height: 1px;
+        display: inline;
+        background: #57D6FF;
+        margin-right: 30px;
+    }
+    .text-p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #57D6FF;
+        display: inline;
+    }
+    .text-h4 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 39px;
+        color: #ffffff;
+    }
+    .box-image {
+        margin-top: 30px;
+        max-width: 725px;
+    }
+    .map-image {
+        width: 100%;
+    }
+    .map-image:hover {
+        filter: drop-shadow(8px 8px 10px #2dcaff);
+    }
+
+    @media only screen and (max-width: 360px) {
+        .line {
+            width: 25px;
+            margin-right: 15px;
+        }
+        .text-p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .text-h4 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+    }
 
