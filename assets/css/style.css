@@ -17,9 +17,11 @@ body{
     max-width: 1220px;
     margin: 0 auto;
     box-sizing:content-box ;
-    padding-inline: 100px ;
 }
 
+.hero-img{
+    display: none;
+}
 
 a{
     text-decoration: none;
@@ -38,7 +40,8 @@ ul{
     align-items: center;
     justify-content: space-between;
     gap: 110px;
-    padding-block:48px;
+    padding-bottom:48px;
+    padding-top: 48px;
 }
 
 .nav-wrapper a{
@@ -81,6 +84,62 @@ ul{
 
 }
 
+#hero {
+
+    height: 100vh;
+}
+.hero-container{
+    max-width: 1327px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 16px;
+    background-image: url("../images/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: rgba(14, 81, 238, 0.56) 0px 22px 70px 4px;
+}
+.hero-wrapper{
+    padding-top: 273px;
+    max-width: 632px;
+    margin: 0 auto;
+    padding-bottom: 145px;
+    height: 100%;
+}
+.hero-wrapper>h2{
+    text-align: center;
+    color: white;
+font-family: Aire Exterior;
+font-size: 48px;
+font-weight: 400;
+line-height: 48px;
+margin-bottom: 97px;
+
+}
+.hero-wrapper>p{
+ color: white;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 18.75px;
+text-align: center;
+
+}
+.hero-wrapper>button{
+    margin: 0 auto;
+    display: flex;
+    clip-path: polygon(0 0, 85% 0, 100% 34%, 100% 100%, 56% 100%, 0 100%, 0% 50%);
+    font-family: Aire Exterior;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    
+    padding: 19px 89px;
+    border: none;
+}
 
 
 
@@ -110,7 +169,9 @@ ul{
     .nav-logo-text{
         display: none;
     }
-
+    .hero-container{
+        box-shadow: none;
+    }
     
 }
 
@@ -145,7 +206,9 @@ ul{
     .bi-list{
         display: block;
     } 
-   
+    .nav-logo-text{
+        display: block;
+    }
 }
 
 @media only screen and (max-width:720px ){
@@ -169,6 +232,56 @@ ul{
     .bi-list{
         padding-right: 20px;
 
+    }
+}
+@media only screen and (max-width:552px ){
+    .hero-wrapper>p{
+        color: white;
+      max-width: 142px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 18.75px;
+text-align: left;
+margin-top: 160px;
+
+       }
+       .hero-wrapper>h2{
+       color: white;
+       max-width: 284px;
+font-family: Aire Exterior;
+font-size: 48px;
+font-weight: 400;
+line-height: 48px;
+text-align: left;
+
+
+    }
+    header{
+        display: none;
+    }
+    .hero-container{
+        margin-top: -40px;
+        padding: 0 38px;
+        height: 100%;
+
+    }
+    .hero-wrapper>button{
+        padding: 14px 79px;
+
+    }
+    .hero-img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 41px;
+    }
+    .hero-wrapper{
+        padding-top: 41px;
+        padding-bottom: 94px;
+    }
+    .hero-wrapper>h2{
+    margin-bottom: 137px;
+    
     }
 }
 
